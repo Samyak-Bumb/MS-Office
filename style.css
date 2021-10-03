@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(226deg, #c7dee0, #42a9fd);
+}
+.main{
+  margin-right: 10%;
+  position: relative;
+  background: #808080;
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  transition: box-shadow 0.4s;
+}
+.xls{
+  position: relative;
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  margin-right: 10%;
+  background: #808080;
+  transition: box-shadow 0.4s;
+}
+.ppt{
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  transition: box-shadow 0.4s;
+  background: linear-gradient(180deg, #fe906a 40%, #d35232 100%);
+}
+.powerpoint{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 25%;
+  right: 65%;
+  border-radius: 10px;
+  z-index: 20;
+  background: linear-gradient(#c54424, #bc3819);
+  box-shadow: 6px 0px 0px #00000020, 10px -4px 0px #00000010, 10px 4px 0px #00000010;
+}
+.excel{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 25%;
+  right: 65%;
+  border-radius: 10px;
+  z-index: 20;
+  background: linear-gradient(#17874e, #0e6b35);
+  box-shadow: 6px 0px 0px #00000020, 10px -4px 0px #00000010, 10px 4px 0px #00000010;
+}
+.column{
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  border-radius: 10px 0px 0px 0px;
+  z-index: 10;
+  background: #185c3780;
+}
+.word{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 25%;
+  right: 65%;
+  border-radius: 10px;
+  z-index: 10;
+  background: linear-gradient(#1d60c0, #1653b6);
+  box-shadow: 6px 0px 0px #00000020, 10px -4px 0px #00000010, 10px 4px 0px #00000010;
+}
+.word::before{
+  content: 'W';
+  position: absolute;
+  top: 25%;
+  left: 26%;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+.excel::before{
+  content: "X";
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+.powerpoint::before{
+  content: "P";
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+.ppt-left{
+  position: absolute;
+  width: 98px;
+  height: 100px;
+  top: 0;
+  left: -4px;
+  border-radius: 100% 0px 0px 0px;
+  z-index: 10;
+  background: #ee6b47;
+}
+.ppt-right{
+  position: absolute;
+  width: 85px;
+  height: 100px;
+  top: 0px;
+  left: 94px;
+  border-radius: 0px 100% 0px 0px;
+  z-index: 10;
+  background: #fe906a;
+}
+.layer{
+  position: absolute;
+  width: 150px;
+  height: 45px;
+}
+.layer--1{
+  top: 0px;
+  border-radius: 10px 10px 0px 0px;
+  background: #42a5ee;
+}
+.layer--2{
+  top: 45px;
+  border-radius: 0px 0px 0px 0px;
+  background: #2b7dd3;
+}
+.layer--3{
+  top: 90px;
+  border-radius: 0px 0px 0px 0px;
+  background: #175bbe;
+}
+.layer--4{
+  top: 135px;
+  border-radius: 0px 0px 10px 10px;
+  background: #103f90;
+}
+.layerx--1{
+  top: 0px;
+  border-radius: 10px 10px 0px 0px;
+  background: #34c380;
+}
+.layerx--2{
+  top: 45px;
+  border-radius: 0px 0px 0px 0px;
+  background: #20a366;
+}
+.layerx--3{
+  top: 90px;
+  border-radius: 0px 0px 0px 0px;
+  background: #0e7c41;
+}
+.layerx--4{
+  top: 135px;
+  border-radius: 0px 0px 10px 10px;
+  background: #185c37;
+}
+.main:hover{
+  box-shadow: 0px 5px 15px #1172b9;
+}
+.xls:hover{
+  box-shadow: 0px 5px 15px #1f724b;
+}
+.ppt:hover{
+  box-shadow: 0px 5px 15px #fd4505;
+}
